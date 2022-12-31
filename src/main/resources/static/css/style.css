@@ -3,13 +3,12 @@ body{
 }
 
 .bg-prim{
-    background: #9400D3;
+    background: rgb(54,183,217);
+    background: linear-gradient(0deg, rgba(54,183,217,1) 0%, rgba(129,103,130,1) 100%);
 }
-.btn-prim{
-
-}
-.btn-sec{
-
+.bg-sec{
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(179,235,177,1) 100%);
 }
 .banner{
     width: 100%;

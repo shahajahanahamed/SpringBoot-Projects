@@ -5,8 +5,46 @@
       <title>Title</title>
   </head>
   <body>
-    <section>
-      <h1>This is sign in page</h1>
+    <section class="banner d-flex justify-content-center align-items-center">
+        <div  class="container">
+            <div class="row">
+                <div class="col col-lg-6 offset-3 ">
+                    <div class="card text-center">
+                        <div class="card-header bg-prim p-3">
+                            <h1>SIGN IN</h1>
+                        </div>
+                        <div class="card-body bg-sec text-dark pt-5 pb-5">
+                            <form>
+                                <div class="form-group pl-5 pr-5">
+                                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <small id="emailHelp" class="form-text text-muted text-left">We'll never share your email with anyone else.</small>
+                                </div>
+                                <div class="form-group pl-5 pr-5">
+                                    <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                                </div>
+                                <div class="form-check text-left ml-5">
+                                    <input type="checkbox" class="form-check-input" id="rememberme">
+                                    <label class="form-check-label" for="rememberme">Remember Me</label>
+                                </div>
+                                <div>
+                                    <a type="button" class="btn bg-prim m-2" href="">Login</a>
+                                    <a type="button" class="btn bg-sec m-2" th:href="@{/}">Back</a>
+                                    <br>
+                                    <small>Or</small>
+                                    <br>
+                                    <a type="button" class="btn bg-sec m-2" th:href="@{/sign-up}">Register</a>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
     </section>
 
   </body>

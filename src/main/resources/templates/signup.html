@@ -5,8 +5,46 @@
         <title>Title</title>
     </head>
     <body>
-        <section>
-            <h1>This is sign up page</h1>
+        <section class="banner d-flex justify-content-center align-items-center">
+            <div  class="container">
+                <div class="row">
+                    <div class="col col-lg-6 offset-3 ">
+                        <div class="card text-center">
+                            <div class="card-header bg-prim p-2">
+                                <h1>Register</h1>
+                            </div>
+                            <div class="card-body bg-sec text-dark pt-4 pb-4">
+                                <form>
+                                    <div class="form-group pl-4 pr-4">
+                                        <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Enter fullname">
+                                    </div>
+                                    <div class="form-group pl-4 pr-4">
+                                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-group pl-4 pr-4">
+                                        <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                                    </div>
+                                    <div class="form-group text-left pl-4 pr-4">
+                                        <textarea class="form-control" id="about" rows="6" placeholder="Enter something about yourself"></textarea>
+                                    </div>
+                                    <div class="form-group form-check text-left ml-4">
+                                        <input type="checkbox" class="form-check-input" id="agreement">
+                                        <label class="form-check-label" for="agreement">Accept Terms & Condition</label>
+                                    </div>
+                                    <div>
+                                        <button type="submit" class="btn bg-prim m-2">Register</button>
+                                        <button type="reset" class="btn bg-sec m-2">Reset</button>
+                                        <br>
+                                        <small>Or</small>
+                                        <br>
+                                        <a type="button" class="btn bg-sec m-2" th:href="@{/sign-in}">Login</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </body>
