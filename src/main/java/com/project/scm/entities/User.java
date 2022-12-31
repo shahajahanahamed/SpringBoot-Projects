@@ -121,6 +121,7 @@ public class User {
                 ", enabled=" + enabled +
                 ", role='" + role + '\'' +
                 ", about='" + about + '\'' +
+                ", contacts=" + contacts +
                 '}';
     }
 }
